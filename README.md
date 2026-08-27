@@ -24,13 +24,22 @@ Businesses often treat their entire customer base as one uniform group, leading 
 
 ## Files
 - `customer_segmentation.ipynb` — full notebook with code, charts, and analysis
+- `customer_segmentation.py` — standalone source code, refactored into documented functions (`load_data`, `clean_data`, `select_and_scale_features`, `find_optimal_k`, `train_kmeans`, `assign_clusters`, `visualize_clusters`, `summarize_segments`, `main`)
 - `Mall_Customers.csv` — dataset used
 - `README.md` — this file
 
 ## How to Run
+
+Notebook:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 jupyter notebook customer_segmentation.ipynb
+```
+
+Script:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+python customer_segmentation.py
 ```
 
 ## Output
